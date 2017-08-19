@@ -1,0 +1,8 @@
+[source,http,options="nowrap"]
+----
+HTTP/1.1 200 OK
+Content-Type: application/json;charset=UTF-8
+Content-Length: 100
+
+[{"name":"Jitin","age":23,"id":1},{"name":"Rahul","age":24,"id":2},{"name":"Akash","age":50,"id":3}]
+----

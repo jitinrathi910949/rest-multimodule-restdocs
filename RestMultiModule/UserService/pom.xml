@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  
+  <!-- We need to take care of project structure -->
+  <parent>
+    <groupId>org.sample</groupId>
+    <artifactId>org.sample.multimodule</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <groupId>org.sample</groupId>
+  <artifactId>org.sample.multimodule.service</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>UserService</name>
+  <description>It contains interface of all the services and it depends on
+  				Model module.
+  </description>
+  
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <dependencies>
+  <dependency>
+  <!-- Dependency on Model module. -->
+   <groupId>org.sample</groupId>
+  <artifactId>org.sample.multimodule.model</artifactId>
+  <version>${project.version}</version>
+  </dependency>
+  </dependencies>
+  
+</project>

@@ -1,0 +1,4 @@
+[source,bash]
+----
+$ curl 'http://localhost:8080/user/adduser' -i -X POST -H 'Content-Type: application/json' -d '{"name":"Harsh","age":27,"id":null}'
+----

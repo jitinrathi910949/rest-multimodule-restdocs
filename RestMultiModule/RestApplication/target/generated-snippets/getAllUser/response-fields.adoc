@@ -1,0 +1,16 @@
+|===
+|Path|Type|Description
+
+|`[].id`
+|`Number`
+|This is user Id
+
+|`[].name`
+|`String`
+|This is user name
+
+|`[].age`
+|`Number`
+|This is user age
+
+|===

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.sample</groupId>
+    <artifactId>org.sample.multimodule</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <groupId>org.sample</groupId>
+  <artifactId>org.sample.multimodule.application</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>RestApplication</name>
+  <description>This is the main module of our application. It contains Application class that
+  				contains main method. It contains all necessary configuration properties.
+  				It contains all the web controllers, views and web resources. Its dependency is 
+  				Service Implementation module.</description>
+ 
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <dependencies>
+   <dependency>
+   			 <groupId>org.sample</groupId>
+           <artifactId>org.sample.multimodule.service.impl</artifactId>
+           <version>${project.version}</version>
+   </dependency>
+     
+  </dependencies>
+  <packaging>war</packaging>
+</project>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <!-- We need to take care of project structure -->
+  <parent>
+    <groupId>org.sample</groupId>
+    <artifactId>org.sample.multimodule</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <groupId>org.sample</groupId>
+  <artifactId>org.sample.multimodule.service.impl</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>UserServiceImpl</name>
+<description>This module has the implementation of the services
+			It depends on our Repository module and ServiceAPI module
+</description>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <dependencies>
+  <!-- Repository dependency -->
+     <dependency>
+  <groupId>org.sample</groupId>
+  <artifactId>org.sample.multimodule.repository</artifactId>
+  <version>${project.version}</version>
+  </dependency>
+  <!-- service api dependency -->
+  <dependency>
+   <groupId>org.sample</groupId>
+  <artifactId>org.sample.multimodule.service</artifactId>
+  <version>${project.version}</version>
+  </dependency>
+  </dependencies>
+</project>
